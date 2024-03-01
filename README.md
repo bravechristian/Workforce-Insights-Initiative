@@ -28,35 +28,55 @@ Exploratory analysis sought to answer the following questions:
 ### Analysis Methods
 Bulk insert was used to get into data Azure Studio, the following are a few intriguing code snippets:
 ~~~ SQL
---Inserting data into the table
-BULK INSERT Sales_Data
-FROM 'C:\Users\camuh\Desktop\Datasets For Analysis\hr.csv'
-WITH (FORMAT = 'CSV');
+SELECT 
+		Employee_Name 
+		,Salary
+		,Avg_Salary
+		,Max_Salary
+		,Min_Salary
+		,GenderTotal
+		,HR.Sex
+	FROM HR
+	INNER JOIN
+			(SELECT 
+				Sex
+				,COUNT(*) AS GenderTotal
+				,AVG(Salary) AS Avg_Salary
+				,MAX(Salary) AS Max_Salary
+				,MIN(Salary) AS Min_Salary
+			FROM HR WHERE DateofTermination IS NOT NULL
+			GROUP BY Sex) AS Genders
+	ON Genders.Sex = HR.Sex;
+
+SELECT 
+		COUNT(Sex) OVER(PARTITION BY Sex) AS Count_of_Females_Males
+		,Employee_Name
+		,Sex
+		,MaritalDesc
+	FROM HR WHERE EmploymentStatus = 'Voluntarily Terminated' 
+	AND RaceDesc = 'Black or African American';
 
 
-SELECT SUM(price) AS Price ,SUM(qty_ordered) AS Qty 
-,ROUND(SUM(price * qty_ordered),2)  AS Cost, 
-ROUND(SUM(sales),2) AS sales ,SUM(sales) - SUM(qty_ordered) AS Profit ,b.city 
-FROM 
-(SELECT
-	order_date
-	,sales
-	,price
-	,qty_ordered
-	,product_line
-	,status_now
-FROM Sales_Data) a
-LEFT JOIN
-(SELECT
-	order_date
-	,contact_fname
-	,customer_name
-	,address_line1
-	,city
-FROM Sales_Data) b
-ON a.order_date = b.order_date
+SELECT 
+		COUNT(Sex) OVER(PARTITION BY Sex) AS Count_of_Females_Males
+		,Employee_Name
+		,Sex
+		,MaritalDesc
+	FROM HR WHERE EmploymentStatus = 'Active' 
+	AND RaceDesc = 'Black or African American';
 
-GROUP BY b.city;
+
+SELECT
+			Employee_Name
+			,Salary
+			,Department
+			,AVG(Salary) OVER(PARTITION BY Department) AS Avg_Salary
+			,RANK() OVER (PARTITION BY Department ORDER BY Salary DESC) AS High_Earners
+			,CASE
+				WHEN Salary < AVG(Salary) OVER(PARTITION BY Department) THEN 'Due for Promotion'
+				ELSE 'Maintain Status Quo'
+			END AS Remarks
+		FROM HR;	
 
 ~~~
 Microsoft Power BI was used extensively in this project, demonstrating the beneficial application of business intelligence in project work.
