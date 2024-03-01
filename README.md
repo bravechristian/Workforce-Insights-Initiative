@@ -21,9 +21,11 @@ During the first stage of data preparation, I completed the following tasks:
 
 ### Exploratory Data Analysis (EDA)
 Exploratory analysis sought to answer the following questions:
-1. What is the general trend in sales?
-2. Which product or products are the best-selling and most profitable?
-3. When are sales at their peak?
+1. What is the current workforce composition in terms of full-time vs. part-time employees, contractors, 
+2. What are the trends in the workforce
+3. Are there any disparities in compensation based on factors such as gender, ethnicity, or job role?
+4. What is the overall level of employee engagement and satisfaction within the organization?
+5. Are there any correlations between employee engagement scores and factors such as workload, leadership, or company culture?
 
 ### Analysis Methods
 Bulk insert was used to get into data Azure Studio, the following are a few intriguing code snippets:
