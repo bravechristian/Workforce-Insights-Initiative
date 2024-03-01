@@ -30,7 +30,7 @@ Bulk insert was used to get into data Azure Studio, the following are a few intr
 ~~~ SQL
 --Inserting data into the table
 BULK INSERT Sales_Data
-FROM 'C:\Users\camuh\Desktop\Datasets For Analysis\salesdata.csv'
+FROM 'C:\Users\camuh\Desktop\Datasets For Analysis\hr.csv'
 WITH (FORMAT = 'CSV');
 
 
