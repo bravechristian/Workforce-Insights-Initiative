@@ -28,7 +28,7 @@ Exploratory analysis sought to answer the following questions:
 5. Are there any correlations between employee engagement scores and factors such as workload, leadership, or company culture?
 
 ### Analysis Methods
-Bulk insert was used to get into data Azure Studio, the following are a few intriguing code snippets:
+Bulk insert was used to get into data Microsoft SQL Studio, the following are a few intriguing code snippets:
 ~~~ SQL
 SELECT 
 		Employee_Name 
@@ -85,10 +85,6 @@ Microsoft Power BI was used extensively in this project, demonstrating the benef
 <br/><br/>
 
 ### Result & Findings
-The analysis's outcome revealed the following:
-- Every year in the fourth quarter, the store made more sales than during the first two years of its existence.
-- Despite being the best-selling product category, classic cars lost money in the two territories.
-- All year long, planes and ships suffered total losses.
 
 
 
@@ -96,7 +92,4 @@ The analysis's outcome revealed the following:
 
 
 
-This is a HR analytical project for an organization. 
-In this project I started by using simple SQL queries to retrieve data and then gradually progressed to complex queries. 
-Segmenting the data into departments and retrieving information
-Used case statements to inform management about employees due for promotion with simple logic
+
