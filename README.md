@@ -83,7 +83,7 @@ SELECT
 ~~~
 
 <br/>
-~~~DAX
+**
 Active Employees = 
 //This measure evaluates the total staff in active service
 // IF(
@@ -96,7 +96,8 @@ CALCULATE(
         HR,'HR'[EmploymentStatus] = "Active"
     )
 )
-~~~
+**
+<br/>
 Microsoft Power BI was used extensively in this project, demonstrating the beneficial application of business intelligence in project work.
 <br/><br/>
 
