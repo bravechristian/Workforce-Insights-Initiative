@@ -28,7 +28,7 @@ Exploratory analysis sought to answer the following questions:
 5. Are there any correlations between employee engagement scores and factors such as workload, leadership, or company culture?
 
 ### Analysis Methods
-Bulk insert was used to get into data Microsoft SQL Studio, the following are a few intriguing code snippets:
+Bulk insert was used to get into data Microsoft SQL Studio, the following are a few intriguing code snippets: Views created were exported to Microsoft PowerBI were DAX measures were written and visuals created.
 ~~~ SQL
 SELECT 
 		Employee_Name 
@@ -80,6 +80,22 @@ SELECT
 			END AS Remarks
 		FROM HR;	
 
+~~~
+
+<br/>
+~~~DAX
+Active Employees = 
+//This measure evaluates the total staff in active service
+// IF(
+//     COUNTX('HR', 'HR'[EmploymentStatus] = "Active"),
+//     COUNTROWS('HR')
+// )
+CALCULATE(
+    COUNT('HR'[EmploymentStatus]),
+    FILTER(
+        HR,'HR'[EmploymentStatus] = "Active"
+    )
+)
 ~~~
 Microsoft Power BI was used extensively in this project, demonstrating the beneficial application of business intelligence in project work.
 <br/><br/>
