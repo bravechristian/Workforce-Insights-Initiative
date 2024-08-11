@@ -88,14 +88,61 @@ SELECT
 Here are some of the DAX formulas used in the project:
 
 ```dax
-Total Sales = SUM(Sales[Amount])
-
-Sales Growth = 
-IF(
-    [Last Year Sales] = 0, 
-    BLANK(), 
-    ([Total Sales] - [Last Year Sales]) / [Last Year Sales]
+Active Employees = 
+//This measure evaluates the total staff in active service
+// IF(
+//     COUNTX('HR', 'HR'[EmploymentStatus] = "Active"),
+//     COUNTROWS('HR')
+// )
+CALCULATE(
+    COUNT('HR'[EmploymentStatus]),
+    FILTER(
+        HR,'HR'[EmploymentStatus] = "Active"
+    )
 )
+
+
+
+Exceeds(Managers) = CALCULATE(
+    DISTINCTCOUNT('HR'[ManagerName]),
+    FILTER(
+        HR, 'HR'[PerformanceScore] = "Exceeds"
+    )
+)
+
+
+Female Employees = 
+CALCULATE(
+    COUNT('HR'[Sex]),
+    'HR'[Sex] = "F"
+)
+
+Male Employees = 
+CALCULATE(
+    COUNT('HR'[Sex]),
+    'HR'[Sex] = "M"
+)
+
+Needs Improvement = CALCULATE(
+    DISTINCTCOUNT('HR'[ManagerName]),
+    FILTER(
+        HR, 'HR'[PerformanceScore] = "Needs Improvement"
+    )
+)
+
+
+Terminated Employees = 
+CALCULATE(
+    COUNT('HR'[EmploymentStatus]),
+    FILTER(
+        HR,'HR'[EmploymentStatus] = "Terminated For Cause" ||
+        'HR'[EmploymentStatus] = "Voluntarily Terminated"
+    )
+)
+
+
+Total All Time Employees = 
+COUNTROWS(HR
 
 ```
 
