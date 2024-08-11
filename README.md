@@ -171,7 +171,10 @@ COUNTROWS(HR
 <br/><br/>
 ### Findings
 1. The data shows the distribution of the workforce based employees on Full Time, Part Time and Contract engagements. 56% of the staff is composed of part time employees, another 22% is Full Time and 22% is contract engagement
-2. The report also shows, that the organization tends to hire more females than males, it also shows gender with the highest contract termination to males. The highest termination exercise been carried out in 2011
+2. The report also shows, that the organization tends to hire more females than males, it also shows gender with the highest contract termination to males. The highest termination exercise been carried out in 2011 and highest recruitment carried out in 2014.
+3. The data shows that white females who work part time are the highest earners followed by black and asian women. Managers earn significantly more than every other categpry of employees.
+4. 36.23% of the total employees are reported to be neutral towrads their work, another 33.33% are very satisfied, 27.05% and satisfied, 2.42% are dissatisfied and 0.97% are very dissatisfied.
+5. Correlation exist between employee engagement scores, leadership roles, race and whether person is a US citizen or not. Most US citizen seems to be doing very well most of which are caucasians. Summarily, most managers exceeds expectation as compared others who needs improvement. It also seems that when people become eligible Non-Citizen in the USA, their performance improve.
 
 
 
