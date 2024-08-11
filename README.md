@@ -83,20 +83,20 @@ SELECT
 ~~~
 
 <br/><br/>
-**
-Active Employees = 
-//This measure evaluates the total staff in active service
-// IF(
-//     COUNTX('HR', 'HR'[EmploymentStatus] = "Active"),
-//     COUNTROWS('HR')
-// )
-CALCULATE(
-    COUNT('HR'[EmploymentStatus]),
-    FILTER(
-        HR,'HR'[EmploymentStatus] = "Active"
-    )
+## DAX Snippets Used in the Power BI Project
+
+Here are some of the DAX formulas used in the project:
+
+```dax
+Total Sales = SUM(Sales[Amount])
+
+Sales Growth = 
+IF(
+    [Last Year Sales] = 0, 
+    BLANK(), 
+    ([Total Sales] - [Last Year Sales]) / [Last Year Sales]
 )
-**
+
 <br/><br/>
 Microsoft Power BI was used extensively in this project, demonstrating the beneficial application of business intelligence in project work.
 <br/><br/>
