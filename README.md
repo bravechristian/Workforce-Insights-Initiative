@@ -83,7 +83,14 @@ SELECT
 ~~~
 
 <br/><br/>
-## DAX Snippets Used in the Power BI Project
+### Visuals
+![Screenshot 2024-08-11 144904](https://github.com/user-attachments/assets/285d86ab-4478-458a-93ac-7f3298728544)
+
+![Screenshot 2024-08-11 145054](https://github.com/user-attachments/assets/876fae58-49f1-4ce8-b506-afed57fccf1b)
+
+
+<br/><br/>
+### DAX Snippets Used in the Power BI Project
 
 Here are some of the DAX formulas used in the project:
 
