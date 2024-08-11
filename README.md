@@ -176,5 +176,15 @@ COUNTROWS(HR
 4. 36.23% of the total employees are reported to be neutral towrads their work, another 33.33% are very satisfied, 27.05% and satisfied, 2.42% are dissatisfied and 0.97% are very dissatisfied.
 5. Correlation exist between employee engagement scores, leadership roles, race and whether person is a US citizen or not. Most US citizen seems to be doing very well most of which are caucasians. Summarily, most managers exceeds expectation as compared others who needs improvement. It also seems that when people become eligible Non-Citizen in the USA, their performance improve.
 
+<br/><br/>
+### Limitations
+Inconsistent or inaccurate data can lead to misleading insights.   
+Missing data points can limit the scope and depth of analysis.
+My interpretation of data could have introduce bias in the result.
+
+<br/><br/>
+### Recommendations
+.	Re-evaluate workforce structure: The high percentage of part-time employees might indicate a reliance on flexible labor or potential cost-cutting measures. Explore the impact of this structure on productivity, employee satisfaction, and overall business performance
+
 
 
