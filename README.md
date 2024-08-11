@@ -184,7 +184,7 @@ My interpretation of data could have introduce bias in the result.
 
 <br/><br/>
 ### Recommendations
-.	Re-evaluate workforce structure: The high percentage of part-time employees might indicate a reliance on flexible labor or potential cost-cutting measures. Explore the impact of this structure on productivity, employee satisfaction, and overall business performance
+#### Re-evaluate workforce structure: The high percentage of part-time employees might indicate a reliance on flexible labor or potential cost-cutting measures. Explore the impact of this structure on productivity, employee satisfaction, and overall business performance
 
 
 
