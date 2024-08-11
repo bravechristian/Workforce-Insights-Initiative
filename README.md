@@ -195,5 +195,12 @@ The significant pay gap between managers and other employees, as well as dispari
 #### Enhance employee engagement: 
 The relatively high percentage of neutral employees suggests a need to improve engagement levels. Implement initiatives to boost employee satisfaction, such as recognition programs, career development opportunities, and improved work-life balance.
 
+<br/><br/>
 
+
+### Summary
+The workforce analysis reveals a predominantly part-time workforce with a higher proportion of female employees, particularly white women in part-time roles, who also tend to be top earners. The organization faces challenges with employee engagement, as indicated by a significant neutral sentiment. Additionally, the data highlights disparities in pay, termination rates, and employee satisfaction across gender, race, and employment status. These findings necessitate strategic interventions to optimize workforce composition, enhance employee engagement, and address compensation inequities
+
+
+<br/><br/><br/><br/>
 
