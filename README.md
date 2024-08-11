@@ -118,16 +118,32 @@ Exceeds(Managers) = CALCULATE(
 )
 
 
-Female Employees = 
-CALCULATE(
+% Female Employees = 
+DIVIDE(
+    CALCULATE(
     COUNT('HR'[Sex]),
     'HR'[Sex] = "F"
+),
+CALCULATE(
+    COUNT('HR'[EmploymentStatus]),
+    FILTER(
+        HR,'HR'[EmploymentStatus] = "Active"
+    )
+)
 )
 
-Male Employees = 
-CALCULATE(
+% Male Employees = 
+DIVIDE(
+    CALCULATE(
     COUNT('HR'[Sex]),
     'HR'[Sex] = "M"
+),
+CALCULATE(
+    COUNT('HR'[EmploymentStatus]),
+    FILTER(
+        HR,'HR'[EmploymentStatus] = "Active"
+    )
+)
 )
 
 Needs Improvement = CALCULATE(
@@ -152,11 +168,10 @@ Total All Time Employees =
 COUNTROWS(HR
 
 ```
-
-
-
-
-
+<br/><br/>
+### Findings
+1. The data shows the distribution of the workforce based employees on Full Time, Part Time and Contract engagements. 56% of the staff is composed of part time employees, another 22% is Full Time and 22% is contract engagement
+2. The report also shows, that the organization tends to hire more females than males, it also shows gender with the highest contract termination to males. The highest termination exercise been carried out in 2011
 
 
 
