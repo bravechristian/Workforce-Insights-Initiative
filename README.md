@@ -178,9 +178,9 @@ COUNTROWS(HR
 
 <br/><br/>
 ### Limitations
-Inconsistent or inaccurate data can lead to misleading insights.   
-Missing data points can limit the scope and depth of analysis.
-My interpretation of data could have introduce bias in the result.
+1. Inconsistent or inaccurate data can lead to misleading insights.
+2. Missing data points can limit the scope and depth of analysis.
+3. My interpretation of data could have introduce bias in the result.
 
 <br/><br/>
 ### Recommendations
