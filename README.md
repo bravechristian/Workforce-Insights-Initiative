@@ -205,8 +205,8 @@ The workforce analysis reveals a predominantly part-time workforce with a higher
 <br/><br/>
 
 ### References
-MySQL Documentation<a href="https://dev.mysql.com/doc/"> </a>
-DAX Formula Language<a href="https://dax.guide/"> </a>
+1. <a href="https://dev.mysql.com/doc/">MySQL Documentation</a>
+2. <a href="https://dax.guide/">DAX Formula Language </a>
 
 
 
