@@ -202,5 +202,13 @@ The relatively high percentage of neutral employees suggests a need to improve e
 The workforce analysis reveals a predominantly part-time workforce with a higher proportion of female employees, particularly white women in part-time roles, who also tend to be top earners. The organization faces challenges with employee engagement, as indicated by a significant neutral sentiment. Additionally, the data highlights disparities in pay, termination rates, and employee satisfaction across gender, race, and employment status. These findings necessitate strategic interventions to optimize workforce composition, enhance employee engagement, and address compensation inequities
 
 
-<br/><br/><br/><br/>
+<br/><br/>
+
+### References
+MySQL Documentation<a href="https://dev.mysql.com/doc/"> </a>
+DAX Formula Language<a href="https://dax.guide/"> </a>
+
+
+
+<br/><br/>
 
